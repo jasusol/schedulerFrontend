@@ -2,6 +2,7 @@ import { Link, Outlet, Route, Routes } from "react-router-dom"
 import Home from "./home"
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
+import SchedulerPage from "./pages/SchedulerPage";
 
 const AppRouter = () => {
 
@@ -13,6 +14,7 @@ const AppRouter = () => {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="signUp" element={<SignUp />} />
+          <Route path="scheduler" element={<SchedulerPage />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
