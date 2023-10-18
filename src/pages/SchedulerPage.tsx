@@ -1,4 +1,4 @@
-import { Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import React from "react";
@@ -27,6 +27,8 @@ function SchedulerPage() {
 
         <Typography sx={{ marginTop: 2 }}>Event Description</Typography>
         <TextField sx={{ marginBottom: 2 }}></TextField>
+
+        <Button variant="contained" color="success">Create New Event</Button>
 
         
       </Grid>
